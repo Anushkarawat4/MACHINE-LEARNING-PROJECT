@@ -1,0 +1,35 @@
+# 1. Write a program that takes a user's name and age as input and prints a Hello World! message that includes their name and age.
+'''
+x=str(input("ENTER NAME:"))
+y=int(input("ENTER AGE:"))
+print("HELLO WORLD!" , x ,"age:" , y)
+'''
+#2.Create a program that swaps the values of two variables without using a third variable.
+'''
+x=2
+y=3
+print(x,y)
+print(y,x)
+'''
+#3.Create a program that prints the first 10 numbers of the Fibonacci sequence.
+'''
+fib= []
+a, b = 0, 1
+while len(fib) < 10:
+    fib.append(a)
+    a, b = b, a + b
+
+
+for x in fib:
+    print(x)
+'''
+#4.Create a function that checks if a given string is a palindrome.
+"""
+a=str(input("ibput string here:"))
+z=a[::-1]
+if a==z:
+    print("palindrome")
+else:
+    print("not palindrome")
+"""
+#5.
