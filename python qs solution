@@ -32,4 +32,23 @@ if a==z:
 else:
     print("not palindrome")
 """
-#5.
+#5Create a program that removes duplicate elements from a list.
+'''
+z=set()
+w=[]
+n=int(input("NUMBER OF ELEMENTS:"))
+i=0
+    
+for i in range(n):
+    x=int(input("INPUT ELEMENT"))
+    w.append(x)
+    z.add(x)
+print("ORIGINAL LIST")
+print(w)
+print("AFTER REMOVING DUPLICATES")
+print("[",end="")
+for i in z:
+    print(i,",",end="")
+
+print("]")
+'''
