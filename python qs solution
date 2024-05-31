@@ -32,7 +32,7 @@ if a==z:
 else:
     print("not palindrome")
 """
-#5Create a program that removes duplicate elements from a list.
+#5.Create a program that removes duplicate elements from a list.
 '''
 z=set()
 w=[]
@@ -51,4 +51,30 @@ for i in z:
     print(i,",",end="")
 
 print("]")
+'''
+#6.Write a class representing a simple bank account with methods to deposit, withdraw, and check balance.
+'''
+class simplebankaccount:
+    def __init__(self):
+        self.amount=0
+        
+    def deposit(self,a):
+        self.amount=self.amount+a
+        print("AMOUNT DEPOSITED")
+
+    def withdraw(self,w):
+        if self.amount>=w:
+            self.amount=self.amount-w
+            print("AMOUNT WITHDRAWN")
+        else:
+            print("INSUFFICIENT BALANCE")
+    def checkbalance(self):
+        print("BALANCE:",self.amount)
+        
+account = simplebankaccount()
+x = int(input("AMOUNT TO BE DEPOSITED: "))
+account.deposit(x)
+y = int(input("AMOUNT TO BE WITHDRAWN: "))
+account.withdraw(y)
+account.checkbalance()
 '''
