@@ -78,3 +78,32 @@ y = int(input("AMOUNT TO BE WITHDRAWN: "))
 account.withdraw(y)
 account.checkbalance()
 '''
+#7.Write a code to list all the odd numbers from a list of numbers using boolean indexing.
+nums= np.arange(10)
+print(nums)
+odd_nums= nums[nums%2==1]
+print(odd_nums)
+
+a=np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]])
+print(a)
+# We will extract the last two rows and the first two columns using slicing.
+b1 = a[0:,:2] #row 1 to the last row, and the first 2 columns
+print(b1)
+#With negative indexing
+b2= a[-3:,-5:-3]
+print(b2)
+b3=a[2:,:] # row 2 onwards and all columns.
+print(b3)
+print(b3.shape) # Here the result is rank 2. # Rank is simply the number of dimensions(or axes) an array has
+b4=a[2,:]
+print(b4)
+print(b4.shape)
+'''
+#8.Write a program that creates a 3x3 matrix with values ranging from 1 to 9. Then, modify the matrix by doubling the values of the second row.
+'''
+import numpy as np
+matrix = np.arange(1, 10).reshape(3, 3)
+print(matrix)
+matrix[1, :] = matrix[1, :] * 2
+print(matrix)
+'''
